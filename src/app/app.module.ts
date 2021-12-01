@@ -17,6 +17,9 @@ import { Cloudinary } from 'cloudinary-core';
 import { NewsComponent } from './news/news.component';
 import { LoginComponent } from './login/login.component';
 import { LoginInterceptor } from './login/login.interceptor';
+import { CreateBlogComponent } from './create-blog/create-blog.component';
+import { QuillModule } from 'ngx-quill';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { LoginInterceptor } from './login/login.interceptor';
     FooterComponent,
     CarouselComponent,
     NewsComponent,
-    LoginComponent
+    LoginComponent,
+    CreateBlogComponent
   ],
   imports: [
     HttpClientModule,
@@ -35,6 +39,8 @@ import { LoginInterceptor } from './login/login.interceptor';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    QuillModule.forRoot(),
+
     CloudinaryModule.forRoot({ Cloudinary }, {
       cloud_name: 'walterscloudinary',
     } as CloudinaryConfiguration)

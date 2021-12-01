@@ -1,0 +1,24 @@
+<div class="container">
+  <form  #form='ngForm' (submit)="onSubmit(form)">
+    <div >New Blog</div>
+
+
+    <input type="file" name="photo" ngModel
+          (input)="onChange(f.files[0])" #f #test>
+    <div >
+      <input   type="text" placeholder=" " name="title" ngModel form.title="ngModel"/>
+      <div class="cut cut-short"></div>
+      <label>Title</label>
+    </div>
+    <div >
+      <quill-editor [styles]="quillStyle" name="text" ngModel form.text="ngModel"  placeholder="">
+      </quill-editor>
+      <label>Text</label>
+    </div>
+    <div >
+      <input type="text" placeholder=" " name="author" ngModel form.author="ngModel"/>
+      <label for="email">Posted By</label>
+    </div>
+    <button type="submit">submit</button>
+   </form>
+</div>

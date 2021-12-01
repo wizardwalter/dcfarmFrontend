@@ -42,7 +42,7 @@
         </div>
         <div class="col-12">
           <div id="news-card" *ngFor="let b of blogs" style="width: 200px; text-overflow: hidden;">
-          <!-- <cl-image *ngIf="blogs" public-id="{{ b.image }}">
+          <cl-image *ngIf="blogs" public-id="{{ b.image }}">
             <cl-transformation
               gravity="face"
               height="200"
@@ -51,7 +51,7 @@
               border="4px_solid_rgb:282828"
               loading='lazy'
             ></cl-transformation>
-          </cl-image> -->
+          </cl-image>
           <h5 class="card-title latest-news-post-text">{{ b.title }}</h5>
         </div>
         </div>
