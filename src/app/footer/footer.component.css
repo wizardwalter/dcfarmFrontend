@@ -1,0 +1,27 @@
+footer {
+  margin-top: 20px;
+  height: 100px;
+  margin-bottom: none;
+  padding-bottom: none;
+  background: hsla(143, 100%, 58%, 1);
+
+  background: linear-gradient(
+    270deg,
+    hsla(143, 100%, 58%, 1) 90%,
+    hsla(30, 51%, 26%, 1) 91%
+  );
+
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(143, 100%, 58%, 1) 90%,
+    hsla(30, 51%, 26%, 1) 91%
+  );
+
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(143, 100%, 58%, 1) 90%,
+    hsla(30, 51%, 26%, 1) 91%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#28FF7B", endColorstr="#654321", GradientType=1 );
+}

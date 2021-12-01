@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <nav *ngIf="!isLogin" class="d-flex flex-wrap justify-content-center fixed-top">
+    <div id="sky" class="row d-flex">
+    <img id="sun" src="https://img.icons8.com/emoji/50/000000/sun-emoji.png"/>
+    <img id='cloud'src="https://img.icons8.com/emoji/48/000000/cloud-emoji.png"/>
+    <img id='cloud1'src="https://img.icons8.com/emoji/48/000000/cloud-emoji.png"/>
+    <img id='cloud2'src="https://img.icons8.com/emoji/48/000000/cloud-emoji.png"/>
+    <img id='cloud3'src="https://img.icons8.com/emoji/48/000000/cloud-emoji.png"/>
+    </div>
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-4"><img id="horse" src="https://img.icons8.com/plasticine/100/000000/horse.png"/>DC Forever Farm</span>
+    </a>
+
+    <ul class="nav nav-pills">
+     <a href="/"><button>Home</button></a>
+     <a href="/news"><button>News</button></a>
+     <a href="/about"><button>About</button></a>
+    </ul>
+  </nav>
+  <nav *ngIf="isLogin" class="d-flex flex-wrap justify-content-center fixed-top">
+    <div id="sky" class="row d-flex">
+    <img id="sun" src="https://img.icons8.com/emoji/50/000000/sun-emoji.png"/>
+    <img id='cloud'src="https://img.icons8.com/emoji/48/000000/cloud-emoji.png"/>
+    <img id='cloud1'src="https://img.icons8.com/emoji/48/000000/cloud-emoji.png"/>
+    <img id='cloud2'src="https://img.icons8.com/emoji/48/000000/cloud-emoji.png"/>
+    <img id='cloud3'src="https://img.icons8.com/emoji/48/000000/cloud-emoji.png"/>
+    </div>
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-4"><img id="horse" src="https://img.icons8.com/plasticine/100/000000/horse.png"/>DC Forever Farm</span>
+    </a>
+
+    <ul class="nav nav-pills">
+     <a href="/"><button>Home</button></a>
+     <a href="/news"><button>News</button></a>
+     <a href="/about"><button>About</button></a>
+     <button class="logout" (click)="logout()">Logout</button>
+    </ul>
+  </nav>
+</div>
+

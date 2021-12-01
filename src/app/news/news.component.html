@@ -1,0 +1,41 @@
+<div *ngIf="isLoading" class="container">
+  <div class="row d-flex justify-content-center">
+    <div  class="lds-facebook col-12">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row d-flex justify-content-around">
+      <div *ngFor="let b of blogs" class="card" >
+        <cl-image public-id="{{b.image}}">
+          <cl-transformation gravity="face" height="235" width="300" crop="fill"></cl-transformation>
+      </cl-image>
+        <div class="card-body">
+          <div class="row justify-content-center">
+            <p class="card-title">{{b.title}}</p>
+          </div>
+          <div class="row justify-content-center">
+            <p id="postedby">posted by: {{b.author}}</p>
+          </div>
+          <div id="buttons" class="row justify-content-center">
+            <div class="d-flex align-items-end">
+              <button class="card-button" [routerLink]="[b._id]">
+                <span class="card-span">View More</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <button class="btn btn-lg btn-success" *ngIf="isLogin" routerLink="/blogs/create" >Create Blog</button>
+</div>
+
+

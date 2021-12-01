@@ -1,0 +1,97 @@
+.container-fluid{
+  height: 150px;
+}
+
+nav{
+  border-radius: 10px;
+  background: hsla(187, 100%, 45%, 1);
+
+  background: linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+  background: -moz-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+  background: -webkit-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00CBE4", endColorstr="#28FF7B", GradientType=1 );
+border: none;
+height: 120px;
+}
+.my-4{
+  margin-bottom: none;
+}
+
+.fs-4{
+  font-family: 'Tanker', sans-serif;
+  margin-bottom: 10px;
+}
+
+.nav-pills{
+  margin-right: 50px;
+  margin-bottom: 15px;
+}
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-right: 5px;
+ }
+
+ button:hover {
+  background-color: #0085FB;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+ }
+
+ button:active {
+  transform: translateY(-1px);
+ }
+#horse{
+  width: 50px;
+  height: 50px;
+}
+ #sky{
+   height: 60px;
+   width: 100%;
+ }
+#sun{
+  height: 43px;
+  width: 65px;
+}
+#cloud{
+  position: absolute;
+  left: 300px;
+  height: 43px;
+  width: 65px;
+}
+#cloud1{
+  position: absolute;
+  left: 650px;
+  height: 43px;
+  width: 65px;
+}
+#cloud2{
+  position: absolute;
+  left: 1100px;
+  height: 43px;
+  width: 65px;
+}
+#cloud3{
+  position: absolute;
+  left: 1400px;
+  height: 43px;
+  width: 65px;
+}
+.logout:hover{
+background-color: rgb(179, 7, 7);
+}

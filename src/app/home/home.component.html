@@ -1,1 +1,61 @@
-<p>home works!</p>
+<div id="background" class="container">
+  <div id="background2" class="container container-2">
+    <div class="row d-flex justify-content-center">
+      <h1>Dc Forever Farm</h1>
+
+      <div id="carousel-row" class="row d-flex justify-content-center">
+        <div id="carousel" class="col-12">
+          <app-carousel [slides]="slides"></app-carousel>
+        </div>
+      </div>
+      <div id="row1" class="row d-flex">
+        <div class="col-4 d-flex justify-content-center align-items-center">
+          <img
+            id="dee"
+            src="https://res.cloudinary.com/walterscloudinary/image/upload/v1638310614/dcfarm/dee_adobespark_jk1h2k.jpg"
+          />
+        </div>
+        <div class="col-8 d-flex justify-content-center align-items-center">
+          <p id="dee-paragraph">
+            Hello everyone my name is Danielle Connell,the owner and founder of
+            DC Forever Farm. All my life since I was a little girl I have had a
+            passion for helping animals. I have to thank my grandparents for
+            installing that in me. Growing up watching them care for animals
+            grew my passion. Here at DC Forever Farm our mission is to save as
+            many animals as possible, any shape or size. At my farm it is a
+            forever thing I promise to give the animals the best home possible
+            and that this will always be there home. I welcome you all into a
+            glimpse of my life and farm.
+          </p>
+        </div>
+      </div>
+      <div id="row2" class="row d-flex justify-content-center">
+        <div class="col-2 d-flex justify-content-end align-items-start">
+          <button id="view-all">
+            <a id="viewallatag" routerLink="/blogs"
+              ><span id="view-all-text">View All</span></a
+            >
+          </button>
+        </div>
+        <div class="col-10 d-flex justify-content-center align-items-start">
+          <span id="latest-news">Latest News</span>
+        </div>
+        <div class="col-12">
+          <div id="news-card" *ngFor="let b of blogs" style="width: 200px; text-overflow: hidden;">
+          <!-- <cl-image *ngIf="blogs" public-id="{{ b.image }}">
+            <cl-transformation
+              gravity="face"
+              height="200"
+              width="200"
+              crop="fill"
+              border="4px_solid_rgb:282828"
+              loading='lazy'
+            ></cl-transformation>
+          </cl-image> -->
+          <h5 class="card-title latest-news-post-text">{{ b.title }}</h5>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
