@@ -13,7 +13,7 @@ export class NewsComponent implements OnInit {
     date: any;
     imageName: any;
     isLogin: boolean = false;
-    isLoading: boolean = true
+    isLoading: boolean = true;
 
     constructor(
       public blogService: BlogService,
@@ -23,13 +23,10 @@ export class NewsComponent implements OnInit {
 
     ngOnInit(): void {
       this.isLogin = this.adminService.getIsAuth();
-      this.blogService.getBlogs().subscribe( (res : any) => {
-        this.blogs = res['blogs'];
-        this.imageName = this.blogs.image;
-        console.log(res);
-        this.date = this.blogs.date;
-        console.log(this.blogs);
-        this.isLoading =  false;
+      this.blogService.getBlogs().subscribe( async (res : any) => {
+        this.blogs = await res['blogs'];
+        this.imageName = await this.blogs.image;
+        this.isLoading =  await false;
       });
   }
 

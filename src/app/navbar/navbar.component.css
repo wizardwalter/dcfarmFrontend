@@ -1,97 +1,550 @@
-.container-fluid{
-  height: 150px;
-}
+@media screen and (min-width:1700px) {
+  .container-fluid{
+    height: 150px;
+  }
 
-nav{
-  border-radius: 10px;
-  background: hsla(187, 100%, 45%, 1);
+  .real-nav{
+    border-radius: 10px;
+    background: hsla(187, 100%, 45%, 1);
 
-  background: linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+    background: linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
 
-  background: -moz-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+    background: -moz-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
 
-  background: -webkit-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+    background: -webkit-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00CBE4", endColorstr="#28FF7B", GradientType=1 );
-border: none;
-height: 120px;
-}
-.my-4{
-  margin-bottom: none;
-}
-
-.fs-4{
-  font-family: 'Tanker', sans-serif;
-  margin-bottom: 10px;
-}
-
-.nav-pills{
-  margin-right: 50px;
-  margin-bottom: 15px;
-}
-button {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00CBE4", endColorstr="#28FF7B", GradientType=1 );
   border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  margin-right: 5px;
- }
+  height: 120px;
+  }
+  .my-4{
+    margin-bottom: none;
+  }
 
- button:hover {
-  background-color: #0085FB;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
- }
+  .fs-4{
+    font-family: 'Tanker', sans-serif;
+    margin-bottom: 10px;
+  }
 
- button:active {
-  transform: translateY(-1px);
- }
-#horse{
-  width: 50px;
-  height: 50px;
+  .nav-pills{
+   margin-left: 300px;
+    margin-bottom: 15px;
+  }
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+   }
+
+   button:hover {
+    background-color: #0085FB;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+
+   button:active {
+    transform: translateY(-1px);
+   }
+  #horse{
+    width: 50px;
+    height: 50px;
+  }
+   #sky{
+     height: 60px;
+     width: 100%;
+   }
+  #sun{
+    height: 43px;
+    width: 65px;
+  }
+  #cloud{
+    position: absolute;
+    left: 300px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud1{
+    position: absolute;
+    left: 650px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud2{
+    position: absolute;
+    left: 1100px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud3{
+    position: absolute;
+    left: 1400px;
+    height: 43px;
+    width: 65px;
+  }
+  .logout:hover{
+  background-color: rgb(179, 7, 7);
+  }
+  section{
+    display: none;
+  }
 }
- #sky{
-   height: 60px;
-   width: 100%;
- }
-#sun{
-  height: 43px;
-  width: 65px;
+@media screen and (min-width: 1200px) and (max-width:1700px) {
+  .container-fluid{
+    height: 150px;
+  }
+
+  .real-nav{
+    border-radius: 10px;
+    background: hsla(187, 100%, 45%, 1);
+
+    background: linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    background: -moz-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    background: -webkit-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00CBE4", endColorstr="#28FF7B", GradientType=1 );
+  border: none;
+  height: 120px;
+  }
+  .my-4{
+    margin-bottom: none;
+  }
+
+  .fs-4{
+    font-family: 'Tanker', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .nav-pills{
+    margin-left: 50px;
+    margin-bottom: 15px;
+  }
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+   }
+
+   button:hover {
+    background-color: #0085FB;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+
+   button:active {
+    transform: translateY(-1px);
+   }
+  #horse{
+    width: 50px;
+    height: 50px;
+  }
+   #sky{
+     height: 60px;
+     width: 100%;
+   }
+  #sun{
+    height: 43px;
+    width: 65px;
+  }
+  #cloud{
+    position: absolute;
+    left: 300px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud1{
+    position: absolute;
+    left: 650px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud2{
+    position: absolute;
+    left: 1100px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud3{
+    position: absolute;
+    left: 1400px;
+    height: 43px;
+    width: 65px;
+  }
+  .logout:hover{
+  background-color: rgb(179, 7, 7);
+  }
+  section{
+    display: none;
+  }
 }
-#cloud{
-  position: absolute;
-  left: 300px;
-  height: 43px;
-  width: 65px;
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  .container-fluid{
+    height: 100px;
+    margin-bottom: 35px;
+  }
+
+  .real-nav{
+    border-radius: 10px;
+    background: hsla(187, 100%, 45%, 1);
+
+    background: linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    background: -moz-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    background: -webkit-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00CBE4", endColorstr="#28FF7B", GradientType=1 );
+  border: none;
+  height: 120px;
+  }
+  .my-4{
+    margin-bottom: none;
+  }
+
+  .fs-4{
+    font-family: 'Tanker', sans-serif;
+
+  }
+
+  .nav-pills{
+   display: none;
+  }
+
+  #horse{
+    width: 50px;
+    height: 50px;
+  }
+   #sky{
+     height: 50px;
+     width: 100%;
+   }
+  #sun{
+    height: 43px;
+    width: 65px;
+  }
+  #cloud{
+    position: absolute;
+    left: 300px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud1{
+    position: absolute;
+    left: 650px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud2{
+    position: absolute;
+    left: 1100px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud3{
+    position: absolute;
+    left: 1400px;
+    height: 43px;
+    width: 65px;
+  }
+  .logout:hover{
+  background-color: rgb(179, 7, 7);
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .p-menu1{
+    height: 100%;
+
+  }
+
+
+  /* Hamburger */
+  .hamburger1 {
+    height: 45px;
+    display: -ms-grid;
+    grid-template-rows: repeat(3, 1fr);
+    position: absolute;
+    left: 90vw;
+    top: 65px;
+
+  }
+
+  .hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #toggle1 {
+    display: none;
+  }
+
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  #toggle1:checked ~ .menu1 {
+    height: 250px;
+  }
+
+
+  /* Menu */
+  .menu1 {
+    width: 100%;
+    background-color: #02173F;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+
+  .menu1 a:last-child {
+    margin-bottom: 40px;
+  }
+
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Oswald', sans-serif;
+  }
+
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
 }
-#cloud1{
-  position: absolute;
-  left: 650px;
-  height: 43px;
-  width: 65px;
-}
-#cloud2{
-  position: absolute;
-  left: 1100px;
-  height: 43px;
-  width: 65px;
-}
-#cloud3{
-  position: absolute;
-  left: 1400px;
-  height: 43px;
-  width: 65px;
-}
-.logout:hover{
-background-color: rgb(179, 7, 7);
+@media screen and (max-width: 700px) {
+  .container-fluid{
+    height: 100px;
+    margin-bottom: 35px;
+  }
+
+  .real-nav{
+    border-radius: 10px;
+    background: hsla(187, 100%, 45%, 1);
+
+    background: linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    background: -moz-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    background: -webkit-linear-gradient(270deg, hsla(187, 100%, 45%, 1) 38%, hsla(143, 100%, 58%, 1) 41%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00CBE4", endColorstr="#28FF7B", GradientType=1 );
+  border: none;
+  height: 120px;
+  }
+  .my-4{
+    margin-bottom: none;
+  }
+
+  .fs-4{
+    font-family: 'Tanker', sans-serif;
+
+  }
+
+  .nav-pills{
+   display: none;
+  }
+
+  #horse{
+    width: 50px;
+    height: 50px;
+  }
+   #sky{
+     height: 50px;
+     width: 100%;
+   }
+  #sun{
+    height: 43px;
+    width: 65px;
+  }
+  #cloud{
+    position: absolute;
+    left: 300px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud1{
+    position: absolute;
+    left: 650px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud2{
+    position: absolute;
+    left: 1100px;
+    height: 43px;
+    width: 65px;
+  }
+  #cloud3{
+    position: absolute;
+    left: 1400px;
+    height: 43px;
+    width: 65px;
+  }
+  .logout:hover{
+  background-color: rgb(179, 7, 7);
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .p-menu1{
+    height: 100%;
+
+  }
+
+
+  /* Hamburger */
+  .hamburger1 {
+    height: 45px;
+    display: -ms-grid;
+    grid-template-rows: repeat(3, 1fr);
+    position: absolute;
+    left: 300px;
+    top: 65px;
+
+  }
+
+  .hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #toggle1 {
+    display: none;
+  }
+
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+
+  #toggle1:checked ~ .menu1 {
+    height: 250px;
+  }
+
+
+  /* Menu */
+  .menu1 {
+    width: 100%;
+    background-color: #02173F;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+
+  .menu1 a:last-child {
+    margin-bottom: 40px;
+  }
+
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Oswald', sans-serif;
+  }
+
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(61, 61, 61);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
 }

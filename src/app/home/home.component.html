@@ -30,18 +30,16 @@
         </div>
       </div>
       <div id="row2" class="row d-flex justify-content-center">
-        <div class="col-2 d-flex justify-content-end align-items-start">
-          <button id="view-all">
-            <a id="viewallatag" routerLink="/blogs"
-              ><span id="view-all-text">View All</span></a
-            >
+        <div class="col-4 col-sm-2 d-flex justify-content-end align-items-start">
+          <button  routerLink="/news" id="view-all">
+              <span id="view-all-text">View All</span>
           </button>
         </div>
-        <div class="col-10 d-flex justify-content-center align-items-start">
+        <div class="col-sm-10 col-8 d-flex justify-content-center align-items-center">
           <span id="latest-news">Latest News</span>
         </div>
-        <div class="col-12">
-          <div id="news-card" *ngFor="let b of blogs" style="width: 200px; text-overflow: hidden;">
+        <div *ngFor="let b of blogs" style="margin-top: 10px;" class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+          <div id="news-card"  style="text-overflow: hidden;">
           <cl-image *ngIf="blogs" public-id="{{ b.image }}">
             <cl-transformation
               gravity="face"

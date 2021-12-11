@@ -14,7 +14,9 @@ export class CreateBlogComponent implements OnInit {
   private blogId: any;
   blog: any;
   isLoading: any;
-
+  file: any;
+  fileName: string = "No Image Selected";
+  imageUrl: string | ArrayBuffer | null = "https://bulma.io/images/placeholders/256x256.png";
 
 
 
@@ -27,22 +29,18 @@ export class CreateBlogComponent implements OnInit {
       this.router.navigateByUrl('/')
     }
   }
-  file: any;
-  fileName: string = "No Image Selected";
-  imageUrl: string | ArrayBuffer | null = "https://bulma.io/images/placeholders/256x256.png";
 
   onChange(file: File) {
     if (file) {
       this.fileName = file.name;
       this.file = file;
-
+      console.log(file);
       const reader = new FileReader();
       reader.readAsDataURL(file);
 
       reader.onload = () => {
         this.imageUrl = reader.result;
       }
-
     }
   };
   // need to make this run more efficient maybe use a promise
@@ -58,12 +56,15 @@ export class CreateBlogComponent implements OnInit {
   formData.append("photo", this.file);
   formData.append("title", Data.title);
   formData.append("text", Data.text);
-  formData.append("author", Data.author);
+  formData.append("author", "Danielle Connell");
   formData.append("userObj", JSON.stringify(userObj));
   console.log(formData)
   console.log(this.file)
-  await this.blogService.addBlog(formData).subscribe();
-  await this.router.navigateByUrl("/blogs");
+  await this.blogService.addBlog(formData).subscribe(async res =>{
+    await res;
+    await this.router.navigateByUrl("/news");
+  });
+
   }
   quillStyle = {'height': '500px'}
 }

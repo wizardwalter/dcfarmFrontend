@@ -1,0 +1,29 @@
+<!-- <div *ngIf="isLoading" class="container">
+  <div class="row d-flex justify-content-center">
+    <div  class="lds-facebook col-12">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div> -->
+<div id="whole-container" class="container" style="width: 90%; overflow:auto">
+  <div class="row justify-content-center">
+    <div class="card">
+      <div class="card-body">
+        <div class="row justify-content-center">
+          <h5 class="card-title">{{blog.title}}</h5>
+        </div>
+        <div class="row justify-content-center">
+          <p class="card-text" [innerHtml]='blog.text'></p>
+        </div>
+        <div class="row justify-content-center">
+          <p class="card-footer">posted by: {{blog.author}}</p>
+        </div>
+      </div>
+      <button *ngIf="isLogin" class="btn btn-lg btn-warning" [routerLink]="['/news/edit/', blog._id]"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+      <button *ngIf="isLogin" class="btn btn-lg btn-danger" (click)="deletePost(blog._id)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</div>
+

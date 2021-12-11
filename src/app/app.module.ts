@@ -19,6 +19,8 @@ import { LoginComponent } from './login/login.component';
 import { LoginInterceptor } from './login/login.interceptor';
 import { CreateBlogComponent } from './create-blog/create-blog.component';
 import { QuillModule } from 'ngx-quill';
+import { EditBlogComponent } from './edit-blog/edit-blog.component';
+import { SingleBlogComponent } from './single-blog/single-blog.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { QuillModule } from 'ngx-quill';
     CarouselComponent,
     NewsComponent,
     LoginComponent,
-    CreateBlogComponent
+    CreateBlogComponent,
+    EditBlogComponent,
+    SingleBlogComponent
   ],
   imports: [
     HttpClientModule,
