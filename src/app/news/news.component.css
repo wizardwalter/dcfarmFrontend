@@ -1,115 +1,579 @@
-#background2 {
-  background: hsla(0, 0%, 88%, 1);
+@media screen and (min-width:1700px) {
+  #background2 {
+    background: hsla(0, 0%, 88%, 1);
 
-  background: linear-gradient(
-    90deg,
-    hsla(0, 0%, 88%, 1) 0%,
-    hsla(0, 0%, 87%, 1) 5%,
-    hsla(0, 0%, 96%, 0.85) 58%
-  );
+    background: linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
 
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(0, 0%, 88%, 1) 0%,
-    hsla(0, 0%, 87%, 1) 5%,
-    hsla(0, 0%, 96%, 0.85) 58%
-  );
+    background: -moz-linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
 
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(0, 0%, 88%, 1) 0%,
-    hsla(0, 0%, 87%, 1) 5%,
-    hsla(0, 0%, 96%, 0.85) 58%
-  );
+    background: -webkit-linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
 
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E0E0E0", endColorstr="#DFDFDF", GradientType=1 );
-  z-index: 2;
-  height: fit-content;
-  width: 1250px;
-}
-
-.lds-facebook {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  align-self: center;
-}
-.lds-facebook div {
-  display: inline-block;
-  position: absolute;
-  left: 8px;
-  width: 16px;
-  background: #fff;
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-  align-self: center;
-}
-.lds-facebook div:nth-child(1) {
-  left: 36rem;
-  animation-delay: -0.24s;
-}
-.lds-facebook div:nth-child(2) {
-  left: 37.5rem;
-  animation-delay: -0.12s;
-}
-.lds-facebook div:nth-child(3) {
-  left: 39rem;
-  animation-delay: 0;
-}
-@keyframes lds-facebook {
-  0% {
-    top: 8px;
-    height: 64px;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E0E0E0", endColorstr="#DFDFDF", GradientType=1 );
+    z-index: 2;
+    height: fit-content;
+    width: 1250px;
   }
-  50%,
-  100% {
-    top: 24px;
-    height: 32px;
+
+  .lds-facebook {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    align-self: center;
   }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    align-self: center;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 36rem;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 37.5rem;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 39rem;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%,
+    100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  #news-header{
+    text-decoration: underline;
+    margin-bottom: 25px;
+  }
+
+
+  .card-img-top{
+     width: 30rem;
+     height: 20vh;
+
+  }
+
+  .card-title{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  .card-body{
+    width: 14.75rem;
+    border-radius: 1%;
+    background-color: white;
+    padding: 1px;
+    margin: 25px;
+  }
+   .card{
+     justify-content: center;
+     width: 14.75rem;
+     border-radius: 15px;
+     overflow: hidden;
+     height: 450px;
+     width: 300px;
+     border: 2px solid black;
+     margin-bottom: 20px;
+   }
+
+   .card-text{
+     text-align: center;
+     font-size: 18px;
+   }
+  #buttons{
+    height: 75px;
+  }
+  #postedby{
+    opacity: 75%;
+  }
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(184, 175, 175);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+   }
+
+   button:hover {
+    background-color: #0085FB;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+
+   button:active {
+    transform: translateY(-1px);
+   }
 }
 
-#news-header{
-  text-decoration: underline;
-  margin-bottom: 25px;
-}
+@media screen and (min-width: 1200px) and (max-width:1700px) {
+  #background2 {
+    background: hsla(0, 0%, 88%, 1);
+
+    background: linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    background: -moz-linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    background: -webkit-linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E0E0E0", endColorstr="#DFDFDF", GradientType=1 );
+    z-index: 2;
+    height: fit-content;
+    width: 1250px;
+  }
+
+  .lds-facebook {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    align-self: center;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 36rem;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 37.5rem;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 39rem;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%,
+    100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  #news-header{
+    text-decoration: underline;
+    margin-bottom: 25px;
+  }
 
 
-.card-img-top{
-   width: 30rem;
-   height: 20vh;
+  .card-img-top{
+     width: 30rem;
+     height: 20vh;
 
+  }
+
+  .card-title{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  .card-body{
+    width: 14.75rem;
+    border-radius: 1%;
+    background-color: white;
+    padding: 1px;
+    margin: 25px;
+  }
+   .card{
+     justify-content: center;
+     width: 14.75rem;
+     border-radius: 15px;
+     overflow: hidden;
+     height: 450px;
+     width: 300px;
+     border: 2px solid black;
+     margin-bottom: 20px;
+   }
+
+   .card-text{
+     text-align: center;
+     font-size: 18px;
+   }
+  #buttons{
+    height: 75px;
+  }
+  #postedby{
+    opacity: 75%;
+  }
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(184, 175, 175);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+   }
+
+   button:hover {
+    background-color: #0085FB;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+
+   button:active {
+    transform: translateY(-1px);
+   }
 }
 
-.card-title{
-  font-style: oblique;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-}
-.card-body{
-  width: 14.75rem;
-  border-radius: 1%;
-  background-color: white;
-  padding: 1px;
-  margin: 25px;
-}
- .card{
-   justify-content: center;
-   width: 14.75rem;
-   border-radius: 15px;
-   overflow: hidden;
-   height: 450px;
-   width: 300px;
-   border: 2px solid black;
-   margin-bottom: 20px;
- }
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  #background2 {
+    background: hsla(0, 0%, 88%, 1);
 
- .card-text{
-   text-align: center;
-   font-size: 18px;
- }
-#buttons{
-  height: 75px;
+    background: linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    background: -moz-linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    background: -webkit-linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E0E0E0", endColorstr="#DFDFDF", GradientType=1 );
+    z-index: 2;
+    height: fit-content;
+    width: 1250px;
+  }
+
+  .lds-facebook {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    align-self: center;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 36rem;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 37.5rem;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 39rem;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%,
+    100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  #news-header{
+    text-decoration: underline;
+    margin-bottom: 25px;
+  }
+
+
+  .card-img-top{
+     width: 30rem;
+     height: 20vh;
+
+  }
+
+  .card-title{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  .card-body{
+    width: 14.75rem;
+    border-radius: 1%;
+    background-color: white;
+    padding: 1px;
+    margin: 25px;
+  }
+   .card{
+     justify-content: center;
+     width: 14.75rem;
+     border-radius: 15px;
+     overflow: hidden;
+     height: 450px;
+     width: 300px;
+     border: 2px solid black;
+     margin-bottom: 20px;
+   }
+
+   .card-text{
+     text-align: center;
+     font-size: 18px;
+   }
+  #buttons{
+    height: 75px;
+  }
+  #postedby{
+    opacity: 75%;
+  }
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(184, 175, 175);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+   }
+
+   button:hover {
+    background-color: #0085FB;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+
+   button:active {
+    transform: translateY(-1px);
+   }
 }
-#postedby{
-  opacity: 75%;
+
+@media screen and (max-width: 700px) {
+  #background2 {
+    background: hsla(0, 0%, 88%, 1);
+
+    background: linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    background: -moz-linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    background: -webkit-linear-gradient(
+      90deg,
+      hsla(0, 0%, 88%, 1) 0%,
+      hsla(0, 0%, 87%, 1) 5%,
+      hsla(0, 0%, 96%, 0.85) 58%
+    );
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E0E0E0", endColorstr="#DFDFDF", GradientType=1 );
+    z-index: 2;
+    height: fit-content;
+    width: 95%;
+  }
+
+  .lds-facebook {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    align-self: center;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 36rem;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 37.5rem;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 39rem;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%,
+    100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  #news-header{
+    text-decoration: underline;
+    margin-bottom: 25px;
+  }
+
+
+  .card-img-top{
+     width: 30rem;
+     height: 20vh;
+
+  }
+
+  .card-title{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+  .card-body{
+    width: 14.75rem;
+    border-radius: 1%;
+    background-color: white;
+    padding: 1px;
+    margin: 25px;
+  }
+   .card{
+     justify-content: center;
+     width: 14.75rem;
+     border-radius: 15px;
+     overflow: hidden;
+     height: 450px;
+     width: 300px;
+     border: 2px solid black;
+     margin-bottom: 20px;
+   }
+
+   .card-text{
+     text-align: center;
+     font-size: 18px;
+   }
+  #buttons{
+    height: 75px;
+  }
+  #postedby{
+    opacity: 75%;
+  }
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(184, 175, 175);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+   }
+
+   button:hover {
+    background-color: #0085FB;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+
+   button:active {
+    transform: translateY(-1px);
+   }
 }

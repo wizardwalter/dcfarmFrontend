@@ -25,3 +25,8 @@ footer {
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#28FF7B", endColorstr="#654321", GradientType=1 );
 }
+@media screen and (max-width:700px) {
+  ul{
+  margin-left: 35%;
+  }
+}

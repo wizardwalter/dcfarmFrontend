@@ -14,9 +14,9 @@ export class CreateBlogComponent implements OnInit {
   private blogId: any;
   blog: any;
   isLoading: any;
-  file: any;
-  fileName: string = "No Image Selected";
-  imageUrl: string | ArrayBuffer | null = "https://bulma.io/images/placeholders/256x256.png";
+  file: any = [];
+  fileName:any = [];
+  imageUrl: any;
 
 
 
@@ -30,6 +30,23 @@ export class CreateBlogComponent implements OnInit {
     }
   }
 
+  // onChange(file: any) {
+  //   if (file) {
+  //     for(var i = 0; i < file.length; i++){
+  //       this.fileName.push(file[i].fileName);
+  //       this.file.push(file[i]);
+  //       const reader = new FileReader();
+  //       reader.readAsDataURL(file[i]);
+
+  //       reader.onload = () => {
+  //         this.imageUrl = reader.result;
+  //       }
+  //     }
+  //     console.log(file);
+  //   }
+  // };
+
+
   onChange(file: File) {
     if (file) {
       this.fileName = file.name;
@@ -41,6 +58,7 @@ export class CreateBlogComponent implements OnInit {
       reader.onload = () => {
         this.imageUrl = reader.result;
       }
+      console.log(file);
     }
   };
   // need to make this run more efficient maybe use a promise

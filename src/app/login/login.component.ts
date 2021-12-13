@@ -11,10 +11,12 @@ import { AdminService } from '../shared/admin.service';
 export class LoginComponent implements OnInit {
   constructor(public adminService: AdminService, public router: Router) {}
 
-
+status: any;
   ngOnInit(): void {}
 
- onSubmit(form: NgForm) {
-   this.adminService.login(form.value.email, form.value.password)
+ async onSubmit(form: NgForm) {
+   await this.adminService.login(form.value.email, form.value.password)
+    this.status = this.adminService.getStatus()
+     setTimeout(()=>{this.status = ''}, 3500);
   }
 }

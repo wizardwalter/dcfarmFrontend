@@ -1,0 +1,39 @@
+#whole-container{
+  min-width: 500px;
+  width:fit-content;
+  overflow: auto;
+  margin-bottom: 400px;
+}
+:host ::ng-deep img {
+  max-width: 100%;
+  }
+:host ::ng-deep p {
+  text-align: center;
+  }
+
+  h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: underline;
+  }
+@media screen and (min-width:1700px) {
+
+}
+
+@media screen and (min-width: 1200px) and (max-width:1700px) {
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+
+}
+
+@media screen and (max-width: 700px) {
+  #whole-container{
+    min-width: 90%;
+    width:fit-content;
+    overflow: auto;
+    margin-bottom: 250px;
+  }
+}
