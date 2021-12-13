@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class BlogService {
   constructor(public http: HttpClient, public router: Router) {}
-  // baseUrl = 'https://k9cs-backend.herokuapp.com';
-  baseUrl = 'http://localhost:8080'
+   //baseUrl = 'http://localhost:8080';
+   baseUrl = 'https://dcfarmbackend.herokuapp.com/';
 
   getBlogs() {
     return this.http.get(this.baseUrl + '/blogs');

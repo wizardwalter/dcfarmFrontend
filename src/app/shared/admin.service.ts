@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { Admin } from '../_models/admin';
 
 @Injectable({
@@ -9,7 +9,8 @@ import { Admin } from '../_models/admin';
 })
 export class AdminService {
   constructor(public http: HttpClient, public router: Router) {}
-  baseUrl = 'http://localhost:8080';
+  //baseUrl = 'http://localhost:8080';
+  baseUrl = 'https://dcfarmbackend.herokuapp.com/';
   isAuthenticated = false;
   isLoading: boolean = false;
   status: string = '';
@@ -37,12 +38,15 @@ export class AdminService {
     const authData: Admin = { email: email, password: password };
     this.isLoading = true;
     return this.http
-      .post<{ token: string; expiresIn: number; ok: boolean; message: string; }>(
+      .post<{ token: string; expiresIn: number; ok: boolean; message: string }>(
         this.baseUrl + '/admin',
         authData
       )
       .subscribe((res) => {
-        if (res.ok) {
+        console.log(res)
+        if (res.ok == false) {
+          this.status = res.message
+        } else {
           const token = res.token;
           this.token = token;
           const expiresInDuration = res.expiresIn;
@@ -54,13 +58,9 @@ export class AdminService {
             now.getTime() + expiresInDuration * 1000
           );
           this.saveAdminData(token, expirationDate);
-          this.status = res.message;
           this.router.navigate(['/']).then(() => {
             window.location.reload();
           });
-        } else {
-          this.status = res.message;
-          return this.status;
         }
       });
   }
