@@ -59,7 +59,6 @@ export class AdminService {
             window.location.reload();
           });
         } else {
-
           this.status = res.message;
           return this.status;
         }

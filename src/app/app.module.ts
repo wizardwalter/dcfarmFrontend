@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,6 +22,7 @@ import { CreateBlogComponent } from './create-blog/create-blog.component';
 import { QuillModule } from 'ngx-quill';
 import { EditBlogComponent } from './edit-blog/edit-blog.component';
 import { SingleBlogComponent } from './single-blog/single-blog.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { SingleBlogComponent } from './single-blog/single-blog.component';
     LoginComponent,
     CreateBlogComponent,
     EditBlogComponent,
-    SingleBlogComponent
+    SingleBlogComponent,
+    AboutComponent
   ],
   imports: [
     HttpClientModule,
@@ -50,7 +53,8 @@ import { SingleBlogComponent } from './single-blog/single-blog.component';
     } as CloudinaryConfiguration)
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: LoginInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: LoginInterceptor, multi: true },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })

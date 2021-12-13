@@ -4,6 +4,8 @@ footer {
   margin-bottom: none;
   padding-bottom: none;
   background: hsla(143, 100%, 58%, 1);
+  padding-left: 15px;
+  padding-right: 15px;
 
   background: linear-gradient(
     270deg,
@@ -25,8 +27,14 @@ footer {
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#28FF7B", endColorstr="#654321", GradientType=1 );
 }
+
 @media screen and (max-width:700px) {
   ul{
   margin-left: 35%;
+  margin-top: 5.5px;
+  }
+  footer{
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
