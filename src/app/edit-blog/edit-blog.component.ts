@@ -14,6 +14,7 @@ export class EditBlogComponent implements OnInit {
   blog: any;
   id: any;
   quillStyle = {'height': '500px'}
+  show: boolean = true;
 
   constructor(public BlogService: BlogService, public activatedRoute: ActivatedRoute, public router: Router) { }
 
@@ -64,6 +65,7 @@ export class EditBlogComponent implements OnInit {
     }
   };
   async onSubmit(formObj: NgForm) {
+    this.show = false;
     let Data = {
       title: formObj.value.title,
       text: formObj.value.text,
@@ -82,6 +84,7 @@ export class EditBlogComponent implements OnInit {
   await this.BlogService.editBlog(this.id ,formData).subscribe(async res =>{
     await res;
     await this.router.navigateByUrl("/news");
+    this.show = await true;
   });
   }
 

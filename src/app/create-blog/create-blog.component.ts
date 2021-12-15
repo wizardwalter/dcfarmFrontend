@@ -17,6 +17,7 @@ export class CreateBlogComponent implements OnInit {
   file: any = [];
   fileName:any = [];
   imageUrl: any;
+  show: boolean = true;
 
 
 
@@ -63,6 +64,7 @@ export class CreateBlogComponent implements OnInit {
   };
   // need to make this run more efficient maybe use a promise
   async onSubmit(formObj: NgForm) {
+    this.show = false;
     let Data = {
       title: formObj.value.title,
       text: formObj.value.text,
@@ -81,6 +83,7 @@ export class CreateBlogComponent implements OnInit {
   await this.blogService.addBlog(formData).subscribe(async res =>{
     await res;
     await this.router.navigateByUrl("/news");
+    this.show = await true;
   });
 
   }

@@ -34,8 +34,10 @@
         >
         </quill-editor>
       </div>
-      <div class="row d-flex justify-content-center">
-        <button type="submit">Submit</button>
+      <div class="row d-flex justify-content-around">
+        <button *ngIf="show" type="submit">Submit</button>
+        <button disabled *ngIf="!show"><i class="fa fa-spinner fa-pulse"></i></button>
+        <button class="cancel" routerLink="/news">Cancel</button>
       </div>
     </form>
   </div>
