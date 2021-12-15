@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class BlogService {
   constructor(public http: HttpClient, public router: Router) {}
    //baseUrl = 'http://localhost:8080';
-   baseUrl = 'https://dcfarmbackend.herokuapp.com';
+   baseUrl = 'https://dcforeverfarmbackend.herokuapp.com';
 
   getBlogs() {
     return this.http.get(this.baseUrl + '/blogs');
