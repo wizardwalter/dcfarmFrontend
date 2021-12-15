@@ -1,20 +1,42 @@
-<div class="container">
-  <form  #form='ngForm' (submit)="onSubmit(form)">
-    <div>Edit Blog</div>
-
-
-    <input type="file" name="photo" ngModel
-          (input)="onChange(f.files[0])" #f #test>
-    <div >
-      <input type="text" placeholder=" " [(ngModel)]="blog.title" name="title" ngModel form.title="ngModel"/>
-      <div class="cut cut-short"></div>
-      <label>Title</label>
-    </div>
-    <div >
-      <quill-editor [styles]="{'height': '500px'}"  [(ngModel)]="blog.text" name="text" ngModel form.text="ngModel"  placeholder="">
-      </quill-editor>
-      <label>Text</label>
-    </div>
-    <button type="submit">submit</button>
-   </form>
+<div class="container d-flex justify-content-center">
+  <div class="col-12 d-flex justify-content-center">
+    <form #form="ngForm" (submit)="onSubmit(form)">
+      <div id="createblogheader">Edit Blog</div>
+      <label for="photo">Cover Photo:</label>
+      <input
+        type="file"
+        name="photo"
+        ngModel
+        (input)="onChange(f.files[0])"
+        #f
+        #test
+      />
+      <div>
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          placeholder=" "
+          [(ngModel)]="blog.title"
+          name="title"
+          ngModel
+          form.title="ngModel"
+        />
+      </div>
+      <div>
+        <label for="text">The Blog:</label>
+        <quill-editor
+          [styles]="{ height: '500px' }"
+          [(ngModel)]="blog.text"
+          name="text"
+          ngModel
+          form.text="ngModel"
+          placeholder=""
+        >
+        </quill-editor>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
 </div>
