@@ -1,6 +1,6 @@
 
 const express = require('express');
-import sslRedirect from 'heroku-ssl-redirect';
+const sslRedirect =  require('heroku-ssl-redirect');
 const path = require('path');
 const app = express();
 app.use(express.static(__dirname + '/dist/frontend'));
