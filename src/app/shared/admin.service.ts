@@ -9,14 +9,14 @@ import { Admin } from '../_models/admin';
 })
 export class AdminService {
   constructor(public http: HttpClient, public router: Router) {}
-  //baseUrl = 'http://localhost:8080';
+  // baseUrl = 'http://localhost:8080';
   baseUrl = 'https://dcforeverfarmbackend.herokuapp.com';
   isAuthenticated = false;
   isLoading: boolean = false;
   status: string = '';
-  private token: any;
-  private tokenTimer: number = 0;
-  private authStatusListener = new Subject<boolean>();
+  token: any;
+  tokenTimer: number = 0;
+  authStatusListener = new Subject<boolean>();
 
   getToken() {
     return this.token;
@@ -42,27 +42,6 @@ export class AdminService {
         this.baseUrl + '/admin',
         authData
       )
-      .subscribe((res) => {
-        console.log(res)
-        if (res.ok == false) {
-          this.status = res.message
-        } else {
-          const token = res.token;
-          this.token = token;
-          const expiresInDuration = res.expiresIn;
-          this.setAdminTimer(expiresInDuration);
-          this.isAuthenticated = true;
-          this.authStatusListener.next(true);
-          const now = new Date();
-          const expirationDate = new Date(
-            now.getTime() + expiresInDuration * 1000
-          );
-          this.saveAdminData(token, expirationDate);
-          this.router.navigate(['/']).then(() => {
-            window.location.reload();
-          });
-        }
-      });
   }
   logout() {
     this.token = null;

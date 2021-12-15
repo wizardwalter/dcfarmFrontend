@@ -8,6 +8,7 @@ import { AdminService } from '../shared/admin.service';
 })
 export class NavbarComponent implements OnInit {
   isLogin:any;
+  menu: any;
   constructor(public adminService: AdminService) { }
 
   ngOnInit(): void {
@@ -15,5 +16,10 @@ export class NavbarComponent implements OnInit {
   }
   logout(){
     this.adminService.logout()
+  }
+
+  untoggle(){
+    this.menu = document.getElementById("toggle1")
+    this.menu.checked = false;
   }
 }

@@ -326,7 +326,7 @@
   }
 
   #toggle1:checked ~ .menu1 {
-    height: 250px;
+    height: 300px;
   }
 
 
@@ -499,7 +499,7 @@
   }
 
   #toggle1:checked ~ .menu1 {
-    height: 250px;
+    height: 300px;
   }
 
 
